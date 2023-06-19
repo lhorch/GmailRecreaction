@@ -1,0 +1,4 @@
+6/19
+- Resources:
+	- Video concerning new scroll animations: https://www.youtube.com/watch?v=SWWZ4JguZdo
+	- Video concerning scroll animations using geometry reader: https://www.youtube.com/watch?v=c6cYeLN9YoY

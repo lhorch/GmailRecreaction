@@ -11,9 +11,14 @@ struct EmailListView: View {
     @ObservedObject var viewModel = EmailListViewModel()
     
     var body: some View {
-        VStack {
-            ForEach(viewModel.emails, id: \.self) { email in
-                EmailCellView(email: email)
+        ScrollView {
+            VStack(alignment: .leading) {
+                Text("All Inboxes")
+                    .padding(.horizontal)
+                
+                ForEach(viewModel.emails, id: \.self) { email in
+                    EmailCellView(email: email)
+                }
             }
         }
         .onAppear {
